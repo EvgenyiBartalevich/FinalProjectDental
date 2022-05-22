@@ -4,10 +4,10 @@
 Contact Up
 @endsection
 
-@section('content')
+@section('content_1')
 
 <div class="nav_general_box">
-    <a href="{{ url('/') }}">home</a>
+    <a href="{{ route('/') }}">home</a>
     <div class="nav_div">></div>
     <span>Contacts</span>
 </div>
@@ -37,7 +37,7 @@ Contact Up
                                                 Sunday - day off</p>
                                                     </div>
 
-                                                    <button class="button"><a href="{{ url('/appoinment') }}">Make an appointment</a></button>
+                                                    <button class="button"><a href="{{ route('appoinment') }}">Make an appointment</a></button>
                                                         </div>
                                                             </div>
 

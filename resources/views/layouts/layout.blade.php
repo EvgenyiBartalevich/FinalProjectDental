@@ -4,18 +4,37 @@
 Dental
 @endsection
 
-@section('content')
+@section('content_1')
 
 <header class="header_container">
     <div class="promo">
-        <h1>We Care About Your Dental Health.</h1>
-		<p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections, injuries and other problems .</p>
+        <h1>We Care About Your Dental Health</h1>
+		<p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections, injuries and other problems</p>
             <form class="form_promo">
-                <button class="button"><a href="{{ url('/appoinment') }}">Make an</br> appointment</a></button>
+                <button class="button"><a href="{{ route('appoinment') }}">Make an</br> appoinment</a></button>
             </form>
     </div>
         <div class="promo_image"><img src="{{asset('image/fon_1.png')}}" class="promo_image_1" alt="image"></div>
 </header>
+
+@include('inc.message')
+
+<section class="section_consultation">
+<div class="form_box">
+    <div class="consultation_box">
+        <h1>free consultation</h1>
+        <span>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth free of infections, injuries and other problems.</span>
+            </div>
+                
+            <form mathod="POST" action="{{ route('free_form') }}">
+                
+                @csrf
+			    <input type="text"  name="name" id="name" placeholder="Your name *">
+			    <input type="tel" name="phone" id="phone" placeholder="Your phone number *"> 
+                <button class="button_free" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 
     <main class="main_container">
         <div class="about_image">
@@ -72,27 +91,50 @@ Dental
 						<div class="box_image_doc">
 							<img src="{{asset('image/doc_1.png')}}" alt="image">
                                 <div class="icon_box">
-                                    <h2><a href="{{ route('register') }}">Dr.Rana Gray</a></h2>
-							        <p>Therapist-stomatologist</p>
+                                    <h2><a href="#">Dr.Rana Gray</a></h2>
+							        <p>Therapeutic</p>
                                         </div>
 								            </div>
 								                <div class="box_image_doc_1">
 									                <img src="{{asset('image/doc_2.png')}}" alt="image">
                                                         <div class="icon_box_2">
-									                        <h2><a href="{{ route('register') }}">Dr.John Roy</a></h2>
-									                        <p>Dentist</p>
-                                                                </div>
-								                                    </div>
-								                                        <div class="box_image_doc_2">
-									                                        <img src="{{asset('image/doc_3.png')}}" alt="image">
-                                                                                <div class="icon_box_3">
-									                                                <h2><a href="{{ route('register') }}">Dr.Michel King</a></h2>
-									                                                <p>Dental surgeon</p>
-                                                                                        </div>
-								                                                            </div>	
-							                                                                    </div>
-				                                                                                    </div>
-	                                                                                                    </section>
+									                        <h2><a href="#">Dr.John Roy</a></h2>
+									                        <p>Orthopedic</p>
+                                                        </div>
+								                    </div>
+								                <div class="box_image_doc_2">
+									        <img src="{{asset('image/doc_3.png')}}" alt="image">
+                                        <div class="icon_box_3">
+									<h2><a href="#">Dr.Michel King</a></h2>
+								<p>Surgical</p>
+                            </div>
+						</div>	
+					</div>
+				</div>
+	        </section>
+    
+<section class="section_steps_container">
+        <div class="image_steps_box">
+            <img src="{{asset('image/doc_steps.png')}}" alt="image_doc">
+                </div>
+                    <div class="header_steps_container">
+                        <h3>easy steps</h3>
+		                    <h6>Dental clinic sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</h6>
+                                </div>
+                                    <div class="content_steps_box">
+                                        <h5><span>1.</span>select your yoctor</h5>
+                                        <p>Clinic dental sit amet, consect etur adipiscing elit cursus.</p>
+                                    </div>
+                                <div class="content_steps_box">
+                                    <h5><span>2.</span>make an appoinment</h5>
+                                    <p>Doctor clinic dental sit amet, consect etur adipiscing elit cursus.</p>
+                                </div>
+                            <div class="content_steps_box">
+                        <h5><span>3.</span>meet your doctor</h5>
+                    <p>Dental clinic doctor sit amet, consect etur adipiscing elit cursus.</p>
+                </div>
+            </section>
+                                                                    
 <section class="number_section">
     <div class="number_box">
         <h1>20</h1>
@@ -111,42 +153,4 @@ Dental
                                             <span>years of experience</span>
                                                 </div>
                                                     </section>
-    
-<section class="section_steps_container">
-        <div class="image_steps_box">
-            <img src="{{asset('image/doc_steps.png')}}" alt="image_doc">
-                </div>
-                    <div class="header_steps_container">
-                        <h3>easy steps</h3>
-		                    <h6>Dental clinic sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</h6>
-                                </div>
-                                    <div class="content_steps_box">
-                                        <h5><span>1.</span>select your yoctor</h5>
-                                        <p>Clinic dental sit amet, consect etur adipiscing elit cursus.</p>
-                                            </div>
-                                                <div class="content_steps_box">
-                                                    <h5><span>2.</span>make an appoinment</h5>
-                                                    <p>Doctor clinic dental sit amet, consect etur adipiscing elit cursus.</p>
-                                                        </div>
-                                                            <div class="content_steps_box">
-                                                                <h5><span>3.</span>meet your doctor</h5>
-                                                                <p>Dental clinic doctor sit amet, consect etur adipiscing elit cursus.</p>
-                                                                    </div>
-                                                                        </section>
-    
-<section class="section_consultation">
-    <div class="consultation_box">
-        <h1>free consultation</h1>
-        <span>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth free of infections, injuries and other problems.</span>
-            </div>
-                <div class="form_box">
-                    <form mathod="POST">
-			            <input type="text"  name="name" placeholder="Your name *">
-			            <input type="tel" name="phon"  placeholder="Your phone number *"> 
-			            <input class="button_free" type="submit" value="Sign Up">
-                    </form>
-                </div>
-            </section>
-
-
 @endsection

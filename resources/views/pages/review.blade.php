@@ -4,10 +4,10 @@
 Review
 @endsection
 
-@section('content')
+@section('content_1')
 
 <div class="nav_general_box">
-    <a href="{{ url('/') }}">home</a>
+    <a href="{{ route('/') }}">home</a>
     <div class="nav_div">></div>
     <span>Reviews</span>
 </div>

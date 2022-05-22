@@ -3,33 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!--<title>{{ config('app.name', 'Dental') }}</title>-->
     <title>Dental</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!--<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css">-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
+    <div class="container_profile">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <h2>Dental</h2>
-                    <!--{{ config('app.name', 'Dental') }}-->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="nav_dental_prof">
+                <img src="{{asset('image/logo.png')}}" alt="logo"><a href="{{ url('/') }}">Dental</a>
+                <span>tel: (29) 111 00 00</span>
+                <span>+375 (44) 111 00 00</span>
+                <span>+375 (33) 111 00 00</span>
+                    </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -75,6 +74,10 @@
                 </div>
             </div>
         </nav>
+
+        <div class="tickets_content">
+            @yield('content_ticket')
+        </div>
 
         <main class="py-4">
             @yield('content')

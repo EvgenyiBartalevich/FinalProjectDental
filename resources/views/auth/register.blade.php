@@ -2,13 +2,14 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Please Register..') }}</div>
+    <div class="line_bord_home"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('Please Register..') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <div class="card-body">
+                        <form method="POST" action="{{ route('register') }}">
                         @csrf
 
                         <div class="row mb-3">
@@ -73,5 +74,11 @@
             </div>
         </div>
     </div>
+<div class="line_bord_home_footer"></div>
+    <footer class="footer_container">
+        <div class="content_footer_container">
+            <p>Copyright &copy; 2020 All rights Reserved - Dental. Bartalevich E.A. 2022</p>
+        </div>
+    </footer>
 </div>
 @endsection
