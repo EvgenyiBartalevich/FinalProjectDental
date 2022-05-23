@@ -14,31 +14,25 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!--<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css">-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css" rel="stylesheet">-->
 </head>
 <body>
-    <div id="app">
-    <div class="container_profile">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div class="container">
             <div class="nav_dental_prof">
                 <img src="{{asset('image/logo.png')}}" alt="logo"><a href="{{ url('/') }}">Dental</a>
-                <span>tel: (29) 111 00 00</span>
-                <span>+375 (44) 111 00 00</span>
-                <span>+375 (33) 111 00 00</span>
                     </div>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                <ul class="navbar-nav me-auto">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                </ul>
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
+                    
+                <ul class="navbar-nav ms-auto">
+                        
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -72,16 +66,10 @@
                         @endguest
                     </ul>
                 </div>
-            </div>
-        </nav>
-
-        <div class="tickets_content">
-            @yield('content_ticket')
-        </div>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+                <main class="py-4">
+                    @yield('content')
+                </main>
+            
     </div>
 </body>
 </html>

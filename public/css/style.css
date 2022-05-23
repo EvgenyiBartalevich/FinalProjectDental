@@ -269,24 +269,37 @@
 
   .errors_message {
     text-align: justify;
-    background-color: rgb(211, 116, 116);
+    background-color: rgb(252, 112, 112);
+    box-shadow: 0 12px 12px 0;
     font-size: 18px;
     height: 60px;
+    width: 70%;
     border-radius: 20px;
     text-decoration:overline;
-    padding-top: 22px;
+    margin-left: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-top: 50px;
   }
 
   .message_success {
     text-align: justify;
     background-color: rgb(100, 202, 126);
+    box-shadow: 0 12px 12px 0;
     font-size: 18px;
     height: 60px;
+    width: 70%;
     border-radius: 20px;
-    text-decoration:overline;
-    padding-top: 28px;
+    margin-left: 150px;
     margin-top: 50px;
+  }
+
+  .message_success{
+    color:#fff;
+    font-size: 26px;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 20px;
   }
 
   .errors_message ul {

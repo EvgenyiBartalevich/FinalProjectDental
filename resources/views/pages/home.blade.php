@@ -8,8 +8,6 @@
                 <div class="nav_div">></div>
                 <span>Profile</span>
                     </div>
-                <!--<div class="card">-->
-            <h3>{{ __('Profile:') }}</h3>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -22,9 +20,6 @@
                         <h2>Your name: {{ Auth::user()->name }}</h2>
                         <h3>Appoinment to the doctor:</h3>
 
-                        <div class="">
-                        
-                        </div>
         <div class="line_bord_home_footer"></div>
 <footer class="footer_container">
     <div class="content_footer_container">
