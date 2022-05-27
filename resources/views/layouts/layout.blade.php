@@ -6,10 +6,14 @@ Dental
 
 @section('content_1')
 
+<div class="messages_error_home">
+@include('inc.message')
+</div>
+
 <header class="header_container">
     <div class="promo">
         <h1>We Care About Your Dental Health</h1>
-		<p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections, injuries and other problems</p>
+		<p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections, injuries and other problems,Veneers are thin linings on the teeth, the purpose of which is to restore the aesthetic appearance of the dentition. </p>
             <form class="form_promo">
                 <button class="button"><a href="{{ route('appoinment') }}">Make an</br> appoinment</a></button>
             </form>
@@ -17,23 +21,22 @@ Dental
         <div class="promo_image"><img src="{{asset('image/fon_1.png')}}" class="promo_image_1" alt="image"></div>
 </header>
 
-@include('inc.message')
-
 <section class="section_consultation">
 <div class="form_box">
     <div class="consultation_box">
         <h1>free consultation</h1>
         <span>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth free of infections, injuries and other problems.</span>
             </div>
+                <div class="wrap_form">
+                    <form mathod="POST" action="{{ route('free_form') }}">
                 
-            <form mathod="POST" action="{{ route('free_form') }}">
-                
-                @csrf
-			    <input type="text"  name="name" id="name" placeholder="Your name *">
-			    <input type="tel" name="phone" id="phone" placeholder="Your phone number *"> 
-                <button class="button_free" type="submit">Send</button>
-            </form>
-        </div>
+                        @csrf
+			            <input type="text"  name="name" id="name" placeholder="Your name *">
+			            <input type="tel" name="phone" id="phone" placeholder="Your phone number *"> 
+                        <button class="button_free" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
     </section>
 
     <main class="main_container">
@@ -66,17 +69,17 @@ Dental
 		        </div>
 			        <div class="img-container">
 				        <div class="box_1">
-					        <img src="{{asset('image/icon_3.png')}}" class="icon_zub" alt="image">
+					        <img src="{{asset('image/dental_check.png')}}" class="icon_zub" alt="image">
 					        <h2>Teeth Checkup</h2>
 					        <p>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections</p>
 				                </div>
 				                    <div class="box_2">
-					                    <img src="{{asset('image/icon_2.png')}}"  class="icon_zub" alt="image">
+					                    <img src="{{asset('image/dental_scaling.png')}}"  class="icon_zub" alt="image">
 					                    <h2>Dental Crown</h2>
 					                    <p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections.</p>
 				                            </div>
 				                                <div class="box_3">
-					                                <img src="{{asset('image/icon_1.png')}}"  class="icon_zub" alt="image">
+					                                <img src="{{asset('image/dental_fees.png')}}"  class="icon_zub" alt="image">
 					                                <h2>Teeth Implant</h2>
 					                                <p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth, free of infections.</p>
 				                                        </div>
@@ -91,21 +94,21 @@ Dental
 						<div class="box_image_doc">
 							<img src="{{asset('image/doc_1.png')}}" alt="image">
                                 <div class="icon_box">
-                                    <h2><a href="#">Dr.Rana Gray</a></h2>
+                                    <h2>Dr.Rana Gray</h2>
 							        <p>Therapeutic</p>
                                         </div>
 								            </div>
 								                <div class="box_image_doc_1">
 									                <img src="{{asset('image/doc_2.png')}}" alt="image">
                                                         <div class="icon_box_2">
-									                        <h2><a href="#">Dr.John Roy</a></h2>
+									                        <h2>Dr.John Roy</h2>
 									                        <p>Orthopedic</p>
                                                         </div>
 								                    </div>
 								                <div class="box_image_doc_2">
 									        <img src="{{asset('image/doc_3.png')}}" alt="image">
                                         <div class="icon_box_3">
-									<h2><a href="#">Dr.Michel King</a></h2>
+									<h2>Dr.Michel King</h2>
 								<p>Surgical</p>
                             </div>
 						</div>	

@@ -11,34 +11,33 @@ Contact Up
     <div class="nav_div">></div>
     <span>Contacts</span>
 </div>
-
-<div class="contacts_container">
-    <div class="content_contacts">
-        <h1>Contact details</h1>
-        <div class="phone_box">
-            <img src="{{asset('image/logo.png')}}"  class="" alt="logo">
-            <p>+375 (29) 111 00 00</p></br> 
-            <p>+375 (33) 111 00 00</p></br>
-            <p>+375 (44) 111 00 00</p>
+    <div class="wrap_contacts_container">
+        <div class="h1">
+            <h1>Contact details</h1>
+            <p>We are always in touch and will answer your message within two hours! We will be happy to help you!</p>
                 </div>
-                <div class="address_box">
-                    <img src="{{asset('image/logo.png')}}"  class="" alt="logo">
-                    <p>Address : Minsk, Bartalevich avenue, 23</p>
-                        </div>
-                            <div class="email_box">
-                                <img src="{{asset('image/logo.png')}}"  class="" alt="logo">
-                                <p>E-mail: info@dental-clinic.by</br>
-                                    Skype: dental_by</p>
-                                        </div>
-                                            <div class="time_box">
-                                                <img src="{{asset('image/logo.png')}}"  class="" alt="logo">
-                                                <p>Mon-Fri: 9:00 - 21:00</br>
-                                                Saturday: 9:00 - 16:00</br>
-                                                Sunday - day off</p>
-                                                    </div>
+                    <div class="content_contacts_page"> 
+                        <ul>
+                            <li>
+                                <p><img src="{{asset('image/ico_phone.png')}}"  class="" alt="logo">Phone:</p>
+                                +375 (29) <strong>505 43 95</strong></br> 
+                                +375 (33) <strong>111 22 33</strong></br>
+                                +375 (44) <strong>111 77 11</strong>
+                            </li>
+                            <li><p><img src="{{asset('image/ico_location.png')}}"  class="" alt="logo">Address: Minsk, Big avenue, 23</p></li>
+                            <li><p><img src="{{asset('image/ico_email.png')}}"  class="" alt="logo">Email:dental@smile.com</p></li>
+                            <li><p><img src="{{asset('image/ico_date.png')}}"  class="" alt="logo">Working hours:</p></br>
+                                Mon-Fri: <strong>9:00 - 21:00</strong></br>
+                                Sat:<strong>10:00 - 18:00</strong></br>
+                                Sunday -<strong>day off</strong>
+                            </li>           
+                        </ul>
+                        <img src="{{asset('image/contacts_img.jpg')}}"  class="img_contacts" alt="logo">
+                    </div>
+                </div>
+    <div class="btn_contacts">
+        <button class="button"><a href="{{ route('appoinment') }}">Make an appointment</a></button>
+    </div>
 
-                                                    <button class="button"><a href="{{ route('appoinment') }}">Make an appointment</a></button>
-                                                        </div>
-                                                            </div>
 
 @endsection     

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="line_bord_home"></div>
         <div class="card">
-            <div class="card-header">{{ __('Welcomes You Dental !') }}</div>
+            <div class="card-header">Welcomes You Dental!</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -47,24 +47,12 @@
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                                   Login
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-<div class="line_bord_home_footer"></div>
-    <footer class="footer_container">
-        <div class="content_footer_container">
-            <p>Copyright &copy; 2020 All rights Reserved - Dental. Bartalevich E.A. 2022</p>
-        </div>
-    </footer>
 </div>
 @endsection

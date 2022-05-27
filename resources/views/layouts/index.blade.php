@@ -7,15 +7,16 @@
     <title>@yield('title_content')</title>
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href=/image" rel="stylesheet">
-    <!--<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css rel="stylesheet">-->
     <script src="{{ URL::asset('js/app.js') }}"></script>
 </head>
 <body>
+<div class="container">
     @include('inc.header')
-
+</div>
     @yield('content_1')
-
+<div class="container">
     @include('inc.footer')
+</div>
 </body>
 </html>
 

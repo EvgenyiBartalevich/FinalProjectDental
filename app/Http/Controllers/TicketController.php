@@ -2,118 +2,77 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Ticket;
+
 use Illuminate\Http\Request;
+use App\Http\Requests\TicketRequest;
+use App\Models\Appoinment;
 
 
 class TicketController extends Controller
 {
 
-    public function index()
-    {
-        /*$tickets = Ticket::latest()->paginate(5);
-        //dd($tickets->get()->toArray());
-
-        return view('tickets.index', compact('tickets'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);*/
-
-        $tickets = Ticket::all();
-
-        return view('tickets.index', compact('tickets'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('tickets.create');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function index (TicketRequest $request)
     {
         //dd($request->all());
-        $request->validate([
-            'name'   => 'required|max:15',
-            'phone' => 'required',
-            'deparment' => 'required',
-            'gender' => 'required',
-            'email' => 'required',
-            'date' => 'required',
-        ]);
+            $ticket = new Appoinment();
+            $ticket->name      = $request->input('name');
+            $ticket->phone     = $request->input('phone');
+            $ticket->email     = $request->input('email');
+            $ticket->deparment = $request->input('deparment');
+            $ticket->doc       = $request->input('doc');
+            $ticket->gender    = $request->input('gender');
+            $ticket->date      = $request->input('date');
+            $ticket->time      = $request->input('time');
+            $ticket->comment   = $request->input('comment');
 
-        Ticket::create($request->all());
+        $ticket->save();
 
-        return redirect()->route('products.index')
-                         ->with('success', 'Product was added successfully');
-
+        return redirect()->route('/')->with('success', 'Your online entry has been accepted!');
     }
-    
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Ticket $ticket)
+    public function appData()
     {
-        return view('tickets.show', compact('ticket'));
+        $ticket = new Appoinment();
+        return view('layouts.app-messages', ['data' => $ticket->all()]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Ticket $ticket)
+    public function detailMessages($id)
     {
-        return view('tickets.edit', compact('ticket'));
+        $ticket = new Appoinment;
+        return view('layouts.detail-messages', ['data' => $ticket->find($id)]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Ticket $ticket)
+    public function updateMessages($id)
     {
-        $request->validate([
-            'name'      => 'required|max:15',
-            'phone'     => 'required',
-            'deparment' => 'required',
-            'gender'    => 'required',
-            'email'     => 'required',
-            'date'      => 'required',
-        ]);
-
-        $ticket->update($request->all());
-
-        return redirect()->route('tickets.index')
-                         ->with('success', 'The appoinment was successfully updated');
+        $ticket = new Appoinment;
+        return view('layouts.update-messages', ['data' => $ticket->find($id)]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Ticket  $ticket
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Ticket $ticket)
+    public function addUpdateMessages ($id, TicketRequest $request)
     {
-        $ticket->delete();
-        return redirect()->route('tickets.index')
-                         ->with('success', 'Appointment successfully deleted');
+        //dd($request->all())
+            $ticket = new Appoinment();
+            $ticket->find($id);
+            $ticket->name      = $request->input('name');
+            $ticket->phone     = $request->input('phone');
+            $ticket->email     = $request->input('email');
+            $ticket->deparment = $request->input('deparment');
+            $ticket->doc       = $request->input('doc');
+            $ticket->gender    = $request->input('gender');
+            $ticket->date      = $request->input('date');
+            $ticket->time      = $request->input('time');
+            $ticket->comment   = $request->input('comment');
+
+        $ticket->save();
+
+        return redirect()->route('appoinment_data', $id)->with('success', 'Your online application has been updated!');
     }
+    public function deleteMessages($id)
+    {
+        Appoinment::find($id)->delete();
+
+        return redirect()->route('appoinment_data', $id)->with('success', 'Your online application has been delete!');
+    }
+
+
 }

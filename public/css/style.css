@@ -6,23 +6,65 @@
   body {
     background-color:#49B3FB;
   }
+
+  html, body {
+    height: 100%;
+  }
   
   .container {
     background-color:#E8F9EE;
     width:80%;
     max-width: 1280px;
     margin: 0 auto;
+    margin-top: 105px;
   }
+
+  .container h1 {
+    color:#031126;
+    text-shadow: #49B3FB 1px 1px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .container h3 {
+    color:#3b93f7;
+    font-size: 21px;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+.container h2, h5, p, strong{
+  font-size: 21px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.pull-right {
+  text-align: center;
+}
   
   .wrap_nav_conteiner {
-    background:#dfe7f0;
+    background:#E8F9EE;
     border-bottom-style:solid;
     border-bottom-width: 5px;
     border-bottom-color:#49B3FB; 
     height: 100px;
-    width:80%;
+    width:100%;
+    top:0;
+    left: 0;
+    z-index: 50;
     display:flex;
     position: fixed;
+  }
+
+  .nav_container {
+    display: table;
+    position: relative;
+    width: 80%;
+    height: 60px;
   }
   
   .nav_container li {
@@ -32,7 +74,7 @@
   
   .nav_container ul {
     margin-top: 42px;
-    margin-left: 33px;
+    text-align: center;
   }
   
   .nav_container a:hover {
@@ -41,7 +83,7 @@
   
   .nav_container a {
     color: #031126;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -51,7 +93,7 @@
   
   .nav_dental_log {
     margin-left: 80px;
-    margin-top: 30px;
+    margin-top: 7px;
   }
 
   .nav_dental {
@@ -76,99 +118,10 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 8px;
     margin-top: 7px;
-    
-  }
-
-  .nav_button_log:hover{
-    background-color: #40d5fa;
-    color: white;
-  }
-  
-  .nav_button_log {
-    background-color: #49B3FB;
-    color: #abecce;
-    border: 3px solid #abecce;
-    box-shadow: 7px 7px 2px 1px #49B3FB;
-    border-radius: 15px;
-    width: 80px;
-    height: 40px;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 15px;
-  }
-  
-  .nav_button_log a {
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .nav_button_log a:hover {
-    color: #031126;
-  }
-
-  .nav_button_reg:hover{
-    background-color: #40d5fa;
-    color: white;
-  }
-  
-  .nav_button_reg {
-    background-color: #49B3FB;
-    color: #abecce;
-    border: 3px solid #abecce;
-    box-shadow: 7px 7px 2px 1px #49B3FB;
-    border-radius: 15px;
-    width: 80px;
-    height: 40px;
-  }
-  
-  .nav_button_reg a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .nav_button_reg a:hover {
-    color: #031126;
-  }
-
-  .nav_button_home:hover{
-    background-color: #40d5fa;
-    color: white;
-  }
-
-  .nav_button_home {
-    background-color: #49B3FB;
-    color: #abecce;
-    border: 3px solid #abecce;
-    box-shadow: 10px 10px 2px 1px #49B3FB;
-    border-radius: 15px;
-    width: 82px;
-    height: 30px;
-    padding-top:10px;
-    margin-left: 70px;
-  }
-
-  .nav_button_home a {
-    color:#FFFFFF;
-    font-size: 18px;
-    text-decoration: none;
-    text-transform: capitalize;
-    margin-left: 15px;
-    margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .nav_button_home a:hover {
-    color: #031126;
   }
   
   .nav_general_box {
     display:flex;
-    padding-top: 100px;
   }
   
   .nav_general_box a:hover {
@@ -213,7 +166,195 @@
     height: 5px;
     margin-top: 70px;
   }
-  
+
+  .gray_button_app {
+    background-color: gray;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .green_button_app {
+    background-color:green;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .button_app_ticket_a {
+    color:#FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .button_app_ticket {
+    background-color:#49b3fb;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .red_button_app {
+    background-color: red;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-header h1{
+    text-transform: capitalize;
+    padding-top: 20px;
+    font-size: 22px;
+  }
+
+  .content_contacts_page {
+    display: flex;
+    justify-content:flex-start;
+  }
+
+  .app_container {
+    text-align: center;
+  }
+
+  .app_container h5 {
+    font-size: 33px;
+    font-weight: bold;
+  }
+
+  .app_container textarea {
+    color: #49B3FB;
+    padding: 4px;
+    border: 0;
+    box-shadow: 0 0 15px 4px #49b3fb;
+    border-radius: 5px;
+    width: 50%;
+    height: 100px;
+  }
+
+  .app_container input, select {
+    color:#031126;
+    padding: 4px;
+    font-size: 18px;
+    border: 0;
+    box-shadow: 0 0 15px 4px #49b3fb;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .app_container p {
+    color: #031126;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .app_container span:hover {
+    color:#031126;
+  }
+
+ .app_container span {
+    font-size: 18px;
+  }
+
+  .h1 h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 16px;
+    text-shadow: #49B3FB 2px 6px;
+    border-radius: 5px solid;
+  }
+
+  .h1 p {
+    color: #031126;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.content_contacts_page li img {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.content_contacts_page li {
+  float:left;
+  width:40%;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  padding-left: 30px;
+}
+
+.content_contacts_page p {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.content_contacts_page strong{
+  font-size: 26px;
+}
+
+.img_contacts {
+  margin-right: 50px;
+  border: 3px solid #abecce;
+  border-radius: 5px;
+  box-shadow: 7px 7px 2px 1px #49B3FB;
+}
+
+  .btn_contacts {
+    display: flex;
+    padding-top: 50px;
+  }
+
   .header_container {
     display: flex;
     padding: 0;
@@ -221,19 +362,19 @@
 
   .promo {
     margin-left: 50px;
-    margin-top: 110px;
+    margin-top: 35px;
     
   }
   
   .promo h1 {
     color: #031126;
-    box-shadow: 10px 10px 2px 1px #49B3FB;
+    text-shadow: #49B3FB 2px 6px;
     border-radius: 5px;
     width: 420px;
     font-size: 44px;
     line-height:46px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 90px;
+    margin-top:40px;
     margin-left: 40px;
     font-weight: 600;
   }
@@ -251,35 +392,39 @@
   }
   
   .promo_image {
-    margin-top: 150px;
+    margin-top: 70px;
   }
   
   .promo_image_1 {
     border-radius: 35px;
-    width: 450px;
-    height: 450px;
+    width: 85%;
     border: 3px solid #49B3FB;
     box-shadow:8px 8px 2px 1px #49B3FB;
   }
   
   .form_promo {
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 70px;
   }
+
+  
 
   .errors_message {
     text-align: justify;
     background-color: rgb(252, 112, 112);
     box-shadow: 0 12px 12px 0;
     font-size: 18px;
-    height: 60px;
     width: 70%;
-    border-radius: 20px;
     text-decoration:overline;
-    margin-left: 150px;
+    margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .message_success p {
+    margin-bottom: 30px;
   }
 
   .message_success {
@@ -289,17 +434,16 @@
     font-size: 18px;
     height: 60px;
     width: 70%;
-    border-radius: 20px;
     margin-left: 150px;
     margin-top: 50px;
   }
 
   .message_success{
-    color:#fff;
+    color:#FFFFFF;
     font-size: 26px;
     list-style-type: none;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .errors_message ul {
@@ -312,9 +456,9 @@
     border:3px solid #abecce;
     box-shadow:8px 8px 2px 1px #49B3FB;
     border-radius: 20px;
-    width: 750px;
+    width:60%;
     height: 210px;
-    margin-left: 150px;
+    margin-left: 205px;
     margin-bottom: 80px;
     margin-top: 70px;
     text-align: center;
@@ -324,7 +468,7 @@
     color: #fff;
     text-transform: capitalize;
     font-size: 44px;
-    margin-top: 20px;
+    margin-bottom: -5px;
   }
   
   .consultation_box span {
@@ -362,7 +506,7 @@
     padding:3px;
     margin-left: 20px;
     border:0;
-    box-shadow:0 0 6px 2px #031126;
+    box-shadow:0 0 6px 2px #fdbaba;
     border-radius: 5px;
   }
   
@@ -404,22 +548,17 @@
     padding-left: 75px;
   }
   
-  .main_wrap_container {
-    margin-left: 100px;
-  }
-  
   .about_image img {
     border-radius: 35px;
     border: 3px solid #49B3FB;
     box-shadow: 10px 10px 1px #49B3FB;
     margin-left: 20px;
-    width: 450px;
-    height: 450px;
+    width: 80%;
   }
   
   .about h3 {
     color: #031126;
-    box-shadow: 10px 10px 2px 1px #49B3FB;
+    text-shadow: #49B3FB 2px 5px;
     border-radius: 5px;
     font-weight: 600;
     width: 300px;
@@ -463,7 +602,7 @@
   }
 
   .dental_services_container h1 {
-    box-shadow: 10px 10px 2px 1px #49B3FB;
+    text-shadow: #49B3FB 2px 5px;
     border-radius: 5px;
     width: 300px;
     text-transform: capitalize;
@@ -488,8 +627,8 @@
   
   .img-container {
     display: flex;
-    height: 100%;
-    margin-left: 70px;
+    justify-content: space-around;
+
   }
   
   .box_1 {
@@ -500,7 +639,6 @@
     border-radius: 20px;
     vertical-align: middle;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    margin-right: 30px;
   }
   
   .box_2 {
@@ -510,7 +648,6 @@
     width: 300px;
     border-radius: 20px;
     vertical-align: middle;
-    margin-right: 30px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   
@@ -573,7 +710,7 @@
   }
   
   .section_team_professionals h1 {
-    box-shadow: 10px 10px 2px 1px #49B3FB;
+    text-shadow: #49B3FB 2px 5px;
     border-radius: 5px;
     text-transform: capitalize;
     font-weight: bold;
@@ -598,7 +735,8 @@
   
   .image_doc {
     display: flex;
-    margin-left: 52px;
+    justify-content: space-around;
+    
   }
   
   .box_image_doc {
@@ -616,7 +754,6 @@
     box-shadow: 10px 18px 2px 1px #49B3FB;
     width: 300px;
     height: 380px;
-    margin-left: 30px;
     border-radius: 20px;
   }
   
@@ -626,7 +763,6 @@
     box-shadow: 10px 18px 2px 1px #49B3FB;
     width: 300px;
     height: 380px;
-    margin-left: 30px;
     border-radius: 20px;
   }
   
@@ -657,7 +793,7 @@
     height: 40px;
   }
   
-  .icon_box h2 a {
+  .icon_box h2 {
     color:#031126;
     font-size: 22px;
     font-weight: 600;
@@ -680,7 +816,7 @@
     height: 40px;
   }
   
-  .icon_box_2 h2 a {
+  .icon_box_2 h2 {
     color:#031126;
     font-size: 22px;
     font-weight: 600;
@@ -703,7 +839,7 @@
     height: 40px;
   }
   
-  .icon_box_3 h2 a{
+  .icon_box_3 h2 {
     color:#031126;
     font-size: 22px;
     font-weight: 600;
@@ -737,7 +873,7 @@
   }
 
   .header_steps_container h3 {
-    box-shadow: 10px 10px 2px 1px #49B3FB;
+    text-shadow: #49B3FB 2px 5px;
     border-radius: 5px;
     color: #031126;
     text-transform: capitalize;
@@ -788,16 +924,121 @@
     font-size: 20px;
     margin-right: 15px;
   }
+
+  .content_about h2 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: #49B3FB 2px 6px;
+    border-radius: 5px solid;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_about h5 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-shadow: #49B3FB 2px 6px;
+    border-radius: 5px solid;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .content_about span {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .content_about p {
+    color: #031126;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .about_image_page {
+    width: 35%;
+    margin: 0 20px 15px 0;
+    float:left;
+    border-radius: 35px;
+    border: 3px solid #49B3FB;
+    box-shadow:8px 8px 2px 1px #49B3FB;
+  }
+
+  .about_image_page_1 {
+    width: 35%;
+    margin: 10px 10px 10px 10px;
+    float:right;
+    border-radius: 35px;
+    border: 3px solid #49B3FB;
+    box-shadow:8px 8px 2px 1px #49B3FB;
+    
+  }
+
+  .button_about {
+    margin: 0 auto;
+    display: block;
+    background: #49B3FB;
+    width: 300px;
+    height: 90px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 3px solid #abecce;
+    box-shadow: 10px 10px 1px #49b3fb;
+    line-height: 70%;
+    margin-top: 40px;
+  }
+
+  .button_about a:hover {
+    color:aquamarine;
+}
+
+.button_about a {
+    color:#fff;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    padding-bottom: 70px;
+    line-height: 110%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text_app_container h2 {
+  text-transform: capitalize;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-shadow: #49B3FB 2px 6px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.text_app_container p {
+    color: #031126;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 400px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto
+}
   
   .section_reviews_container h1 {
     text-transform: capitalize;
     font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 30px;
-    box-shadow: 10px 10px 2px 1px #49B3FB;
+    text-shadow: #49B3FB 2px 6px;
     border-radius: 5px;
-    width: 400px;
-    margin-left: 320px;
+    text-align: center;
     margin-bottom: 16px;
   }
 
@@ -808,10 +1049,10 @@
   .section_reviews_container p {
     color: #031126;
     font-size: 16px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    width: 450px;
-    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 400px;
+    font-weight: 400;
+    text-align: center;
     margin-bottom: 18px;
     margin-left: auto;
     margin-right: auto
@@ -891,16 +1132,32 @@
     width: 250px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  
-  .add_review {
-    text-align: center;
-    margin-bottom: 35px;
+
+  .form_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_contacts h1 {
+   font-size: 40px;
+   text-align: center;
+  }
+
+  .review_input {
+    color:#49B3FB;
+    padding:4px;
+    border:0;
+    box-shadow:0 0 15px 4px #49B3FB;
+    height:25px;
+    border-radius: 5px;
   }
 
   .reviews_container textarea {
     padding:10px;
     border:0;
     box-shadow:0 0 15px 4px #49B3FB;
+    border-radius: 5px;
+    
   }
   
   .butoon_submit a:hover {
@@ -1018,8 +1275,6 @@
   }
 
   .footer_container {
-    max-width: 1280px;
-    margin: 0 auto;
     height: 100px;
   }
   
@@ -1027,11 +1282,11 @@
     color:#031126;
     text-align: center;
     font-size: 18px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
   }
 
   .content_footer_container p {
     padding-top: 40px;
     font-weight: 500;
   }
-  
+
