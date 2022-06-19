@@ -1,23 +1,25 @@
 @extends('layouts.layout')
 
 @section('title_content')
-Online Ticket
+Онлайн тфлон
 @endsection
 
 @section('content_1')
 
 <div class="nav_general_box">
-    <a href="{{ route('/') }}">home</a>
+    <a href="{{ route('/') }}">Главная</a>
     <div class="nav_div">></div>
-    <span>Ticket</span>
+    <span>Талон</span>
 </div>
 
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h1> {{ Auth::user()->name }}, Welcome to personal account!</br>
-                    Today {{ date('d-m-Y') }}
+                    <div class="messages_info"> @include('inc.message') </div>
+                    <h1>Добро пожаловать!</br>
+                    Сегодня: {{ date('d-m-Y') }}гг.
+                    <h3>Ваши online записи:</h3>
                 </h1>
             </div>
                 <div class="card-body">
@@ -26,10 +28,9 @@ Online Ticket
                             {{ session('status') }}
                         </div>
                     @endif
-                    <div class="messages_info"> @include('inc.message') </div>
                     
-                    <button type="button" class="button_app_ticket"><a href="{{ route('free_data') }}" class="button_app_ticket_a">Show</a></button>
-                    <button type="button" class="button_app_ticket"><a href="{{ route('appoinment_data') }}" class="button_app_ticket_a" >Appoinment</a></button>
+                    <button type="button" class="button_app_ticket"><a href="{{ route('free_data') }}" class="button_app_ticket_a">Бесплатная консультация</a></button>
+                    <button type="button" class="button_app_ticket"><a href="{{ route('appoinment_data') }}" class="button_app_ticket_a" >Запись на прием</a></button>
                 </div>
             </div>
         </div>

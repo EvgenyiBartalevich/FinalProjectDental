@@ -1,0 +1,1317 @@
+@media(max-width:1024px){
+
+.nav_toggle {
+    display: inline;
+}
+
+.nav_container ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #49B3FB;
+    opacity: .9;
+    padding: 2%;
+    min-width: 150px;
+    height: 300px;
+    margin-left: -192px;
+    margin-top: 105px;
+}
+
+.nav_container a {
+    color: #fff;
+}
+
+#nav_toggle:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_logo img {
+    margin-left: 0;
+}
+
+.nav_container li:not(:last-child) {
+    margin-right:0;
+}
+
+.nav_container li {
+    margin-top: 20px;
+}
+
+.nav_container a {
+    font-size: 16px;
+}
+
+.nav_container button {
+    margin-top: 42px;
+}
+
+.nav_dental a {
+    font-size: 22px;
+    margin-left: 10px; 
+} 
+
+.promo {
+    margin-left: 0;
+}
+
+.promo h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 32px;
+    width: 390px;
+}
+
+.promo p {
+    font-size: 12px;
+    width: 390px;
+}
+
+.promo_image_1 {
+    margin-top: 10px;
+    box-shadow: 5px 7px 2px 1px #49B3FB;
+}
+
+.button {
+    width:250px;
+    height: 70px;
+    margin-left:25px;
+}
+
+.button a {
+    font-size: 24px;
+}
+
+.section_consultation {
+    width: 80%;
+    margin-left: 75px;
+}
+
+.consultation_box span {
+    font-size: 12px;
+    width: 500px;
+}
+
+.consultation_box h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 32px;
+}
+
+.about {
+    padding-top: 20px;
+}
+
+.about_image img {
+    width: 100%;
+    box-shadow: 5px 7px 2px 1px #49B3FB;
+}
+
+.about h6 {
+    width: 345px;
+    margin-left: 60px;
+}
+
+.about h3 {
+    text-shadow: #49B3FB 2px 1px;
+    margin-top: 0;
+    width: 470px;
+    font-size: 22px;
+}
+
+.about_box_content p {
+    text-align: center;
+    margin-left: 80px;
+}
+
+.about_box_content h5 {
+    margin-bottom: 5px;
+}
+
+.dental_services_container h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 24px;
+}
+
+.dental_services_container p {
+    margin-left: ;
+    font-size: 14px;
+    margin-left: 200px;
+}
+
+.box_1 p, 
+.box_2 p, 
+.box_3 p {
+    font-size: 12px;
+    text-align: center;
+    padding:0;
+    margin-bottom: 30px;
+}
+
+.box_1 h2,
+.box_2 h2,
+.box_3 h2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 18px;
+}
+
+.box_1, 
+.box_2,
+.box_3 {
+    width: 200px;
+}
+
+.dental_container {
+    display: block;
+}
+
+.section_team_professionals h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size:24px;
+    margin-bottom: 0;
+}
+
+.section_team_professionals p {
+    font-size: 14px;
+    margin-left: 200px;
+}
+
+.icon_box h2,
+.icon_box_2 h2,
+.icon_box_3 h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.icon_box p,
+.icon_box_2 p,
+.icon_box_3 p {
+    margin-left: 70px;
+}
+
+.image_doc {
+    margin: 40px 0 50px 250px;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.box_image_doc,
+.box_image_doc_1,
+.box_image_doc_2{
+    width:220px;
+    height: 280px;
+}
+
+.box_image_doc img,
+.box_image_doc_1 img,
+.box_image_doc_2 img{
+    width: 220px;
+    height: 220px;
+}
+
+.image_steps_box img{
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-top: 70px;
+    width: 350px;
+    height: 350px;
+}
+
+.header_steps_container h3 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 24px;
+}
+
+.header_steps_container h6 {
+    margin-left: 70px;
+    font-size: 16px;
+}
+
+.content_steps_box h5 {
+    margin-left: 30px;
+    padding-left: 30px;
+} 
+
+.content_steps_box p {
+    margin-left: 70px;
+    font-size: 14px;
+}
+
+.number_section {
+    width: 715px;
+}
+
+.number_box,
+.number_box_1,
+.number_box_2,
+.number_box_3 {
+    margin-left: 25px;
+}
+
+.number_box,
+.number_box_1,
+.number_box_2,
+.number_box_3 {
+    margin-top: 0;
+}
+
+.content_about h2 {
+    text-shadow: #49B3FB 2px 1px;
+}
+
+.content_about h5 {
+    text-shadow: #49B3FB 2px 1px;
+}
+
+.button_about {
+    margin-top:50px;
+}
+
+.footer_container {
+    height: 70px;
+}
+
+.content_contacts_page {
+    flex-direction: column;
+}
+
+.img_doc_class img {
+    width: 350px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.list_content {
+    padding-left: 40px;
+}
+
+.list_content li {
+    width: 270px;
+    height: 75px;
+}
+
+.list_class a {
+    font-size: 24px;
+}
+
+.list_class {
+    padding-top: 10px;
+}
+
+.row1_bady h2 {
+    margin-top: 0;
+}
+
+
+}
+@media(max-width:768px){
+
+.nav_container ul{
+    margin-top: 104px;
+    margin-left: -217px;
+}
+
+.header_container {
+    flex-direction: column;
+}
+.promo_image_1 {
+    width: 450px;
+    height: 450px;
+    margin-left: 80px;
+}
+
+.promo {
+    margin-top: 20px;
+}
+
+.promo h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 24px;
+    width: 300px;
+    margin-left: 160px;
+    line-height: 30px;
+}
+
+.promo p {
+    font-size: 12px;
+    width: 535px;
+    text-align: justify;
+}
+
+.promo_image {
+    margin-top: 30px;
+}
+
+.button a {
+    font-size: 16px;
+}
+
+.button {
+    width:300px;
+    height: 50px;
+    margin-left: 80px
+}
+
+.consultation_box h1 {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.consultation_box span {
+    font-size: 12px;
+}
+
+.form_box input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.buttom_free {
+    margin-top: 30px;
+}
+
+.about h3 {
+    text-shadow: #49B3FB 2px 1px;
+    margin-top: 0;
+    margin-left: 35px;
+    width: 245px;
+    font-size: 18px;
+}
+
+.about h6 {
+    width: 250px;
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+.about_image img {
+    width: 80%;
+}
+
+.about_box_content h5 {
+    margin-bottom: 5px;
+    width: 250px;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.about_image img {
+    width:220px;
+    margin-top: 42px
+}
+
+.about_image {
+    padding-top: ;
+}
+
+.about {
+    padding-top: 0px;
+}
+
+.about_box_content p {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.dental_services_container h1 {
+    font-size: 18px;
+    text-shadow: #49B3FB 2px 1px;
+}
+
+.section_consultation {
+    width: 80%;
+    margin-left: 53px;
+}
+
+.main_container {
+    padding-bottom: 20px;
+}
+
+.dental_services_container p {
+    margin-left: ;
+    font-size: 12px;
+    margin-left: 95px;
+    width:450px;
+}
+
+.box_1, 
+.box_2,
+.box_3 {
+    width: 145px;
+}
+
+.image_doc {
+    flex-direction: column;
+    margin: -20px 0 -80px 40px;
+}
+
+.section_team_professionals h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 20px;
+    padding-top: 0;
+}
+
+.section_team_professionals p {
+    font-size: 10px;
+    margin-left: 100px;
+    width: 400px;
+}
+
+.box_image_doc,
+.box_image_doc_1,
+.box_image_doc_2 {
+    width: 250px;
+    height: 300px;
+    margin-left: 140px;
+    box-shadow: 3px 3px 2px 1px #49B3FB;
+    margin-bottom: 30px;
+}
+
+.box_image_doc img,
+.box_image_doc_1 img,
+.box_image_doc_2 img {
+    width: 250px;
+    height: 250px;
+  }
+
+.image_steps_box img{
+    font-size: 20;
+    width: 230px;
+    height: 230px;
+    justify-content: space-between;
+}
+
+.header_steps_container h3 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.content_steps_box h5 {
+    margin-left: 30px;
+    padding-left: 30px;
+} 
+
+.header_steps_container h6 {
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+.content_steps_box h5 {
+    margin-left: 0px;
+    font-size: 16px;
+}
+
+.content_steps_box p {
+    margin-left: 20px;
+    font-size: 12px;
+    width: 270px;
+}
+
+.number_box span,
+.number_box_1 span,
+.number_box_2 span,
+.number_box_3 span {
+    font-size: 12px;
+}
+
+.number_box h1,
+.number_box_1 h1,
+.number_box_2 h1,
+.number_box_3 h1 {
+    font-size: 28px;
+}
+
+.number_section {
+    width: 480px;
+    height: 130px;
+}
+
+.content_footer_container p {
+    font-size: 10px;
+}
+
+.footer_container {
+    height: 50px;
+}
+
+.main_about_container img {
+    width: 300px;
+    height: 300px;
+}
+
+.gallary_list img {
+    width:180px;
+    height: 180px;
+}
+
+.button_about {
+    width: 200px;
+    height: 70px;
+}
+
+.button_about a {
+    font-size: 18px;
+}
+
+.content_contacts_page p{
+    width: 500px;
+    margin-left: 50px;
+}
+
+.button {
+    margin-left: 0;
+}
+
+.message_success {
+    margin-left: 100px;
+}
+
+.img_doc_class img {
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+.list_content li {
+    width: 220px;
+    height: 75px;
+}
+
+.img_doc_class {
+    padding-left: 20px;
+}
+
+.img_imgclass {
+    width: 300px !important;
+    height: 250px;
+}
+
+}
+
+@media(max-width:425px) {
+.nav_container ul{
+    margin-top: 104px;
+    margin-left: -251px;
+}
+
+.header_container {
+    flex-direction: column;
+}
+
+.promo h1 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.promo p {
+    font-size: 10px;
+    width: 260px;
+}
+
+.promo_image_1 {
+   margin-left: 30px;
+   width: 270px;
+    height: 270px;
+}
+
+.promo_image {
+    margin-top:20px;
+  }
+
+.button a {
+    font-size: 12px;
+}
+
+.button {
+    width:200px;
+    height: 50px;
+    margin-left:0;
+}
+
+.button_free {
+    font-size: 18px;
+}
+
+.section_consultation {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 310px;
+}
+
+.main_container {
+    flex-direction: column;
+}
+
+.about_image img {
+    width:80%;
+    margin-top: 0;
+}
+
+.about h3 {
+    text-shadow: #49B3FB 2px 1px;
+    margin-top: 20px;
+    margin-left: -10px;
+    font-size: 16px;
+}
+
+.about h6 {
+    margin-left: -10px;
+    font-size: 11px;
+}
+
+.about_box_content h5 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-left: -10px;
+}
+
+.about_box_content p {
+    margin-left: -35px;
+    font-size: 10px;
+}
+
+.dental_services_container p {
+    font-size: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+.img-container {
+    flex-direction: column;
+}
+
+.box_1, 
+.box_2,
+.box_3 {
+    width: 250px;
+    height: 170px;
+    margin-left: 43px;
+}
+
+.icon_zub {
+    margin-left: 100px;
+    margin-top: 0;
+}
+
+.section_team_professionals h1 {
+    text-shadow: #49B3FB 2px 1px;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 250px;
+    margin-bottom: 0;
+}
+
+.section_team_professionals p {
+    font-size: 10px;
+    margin-left: 55px;
+    width: 250px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.image_doc {
+    margin: 40px 0 50px -100px;
+}
+
+.box_image_doc,
+.box_image_doc_1,
+.box_image_doc_2 {
+    width: 250px;
+    height: 305px;
+    box-shadow: 5px 7px 2px 1px #49B3FB;
+}
+
+.box_image_doc img,
+.box_image_doc_1 img,
+.box_image_doc_2 img {
+    width: 250px;
+    height: 250px;
+  }
+
+.icon_box h2,
+.icon_box_2 h2,
+.icon_box_3 h2 {
+    font-size:16px;
+    margin-top: 10px;
+  }
+
+  .header_steps_container {
+    margin-top: -50px;
+  }
+
+  .image_steps_box img{
+    width: 80%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.header_steps_container h3 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.header_steps_container h6 {
+    width: 280px;
+    margin-left: 35px;
+    font-size: 11px;
+}
+
+.content_steps_box h5 {
+    margin-left: -30px;
+    font-size: 14px;
+}
+
+.content_steps_box p {
+    font-size:10px;
+    width: 300px;
+}
+
+.number_section {
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.number_box,
+.number_box_1,
+.number_box_2,
+.number_box_3 {
+    margin-top: 0;
+}
+
+.number_box h1,
+.number_box_1 h1,
+.number_box_2 h1,
+.number_box_3 h1 {
+    font-size: 40px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.number_box span,
+.number_box_1 span,
+.number_box_2 span,
+.number_box_3 span {
+    font-size: 18px;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.content_footer_container p{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.content_about h2{
+    font-size: 26px;
+}
+
+.content_about h5 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.main_about_container img {
+    width: 250px;
+    height: 250px;
+    margin-left: 22px;
+}
+
+.about_image_page_1 {
+    display: none;
+}
+
+.gallary_list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_reviews_container h1 {
+    font-size: 24px;
+}
+
+.section_reviews_container p {
+    width: 300px;
+}
+
+.box_image_reviews {
+    width: 250px;
+    margin-right: 75px;
+}
+
+.review_input {
+    width: 200px;
+}
+
+.reviews_container textarea {
+    width: 200px;
+}
+
+.box_image_reviews p {
+    margin-left: -30px;
+}
+
+.h1 p {
+    width: 300px;
+}
+
+.content_contacts_page p {
+    width: 300px;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+.message_success {
+    margin-left: 50px;
+}
+
+.container_content {
+    flex-direction: column;
+}
+
+.img_doc_class img {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.list_content {
+    padding-left: 70px;
+}
+
+.green_button_app {
+    margin-top: 20px;
+}
+
+.text_app_container p {
+    width: 250px;
+}
+
+.img_doc_class img {
+    width: 250px;
+    height: 250px;
+}
+
+.app_container input,
+.app_container select,
+.app_container textarea {
+    width: 250px;
+    height: 30px;
+}
+
+.img_class_doc {
+    display: none;
+}
+
+
+
+}
+
+@media(max-width:375px) {
+.nav_container ul{
+    margin-top: 104px;
+    margin-left: -196px;
+}
+
+.nav_logo img {
+    margin-left: -50px;
+}
+
+.nav_dental a {
+    margin-left: -10px; 
+}
+
+.container h1 {
+    margin-left: 55px;
+    width: 200px;
+}
+
+.promo p {
+    width: 220px;
+}
+
+.button {
+    width:150px;
+}
+
+.main_container {
+    padding-left: 40px;
+}
+
+.consultation_box h1 {
+    margin-left: 25px;
+  }
+
+.promo_image_1 {
+   margin-left: 25px;
+   width: 80%;
+}
+
+.about h3 {
+    margin-left: -10px;
+}
+
+.about h6 {
+    margin-left: -15px;
+}
+
+.about_box_content h5 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-left: -15px;
+}
+
+.about_box_content p {
+    width: 230px;
+    margin-left: 0;
+}
+
+.dental_services_container h1 {
+   margin-left: 55px;
+   font-size: 16px;
+  }
+
+.dental_services_container p {
+    width: 205px;
+}
+
+.box_1, 
+.box_2,
+.box_3 {
+    width: 210px;
+}
+
+.icon_zub {
+    margin-left: 80px;
+}
+
+.box_1 h2,
+.box_2 h2,
+.box_3 h2 {
+    font-size: 14px;
+}
+
+.section_team_professionals h1 {
+    margin-left: 50px;
+  }
+
+.section_team_professionals p {
+    width: 210px;
+    margin-bottom: 20px;
+}
+
+.box_image_doc img,
+.box_image_doc_1 img,
+.box_image_doc_2 img {
+    width: 210px;
+    height: 210px;
+  }
+
+.box_image_doc,
+.box_image_doc_1,
+.box_image_doc_2 {
+    width: 210px;
+    height: 270px;
+}
+
+.icon_box h2,
+.icon_box_2 h2,
+.icon_box_3 h2 {
+    font-size:12px;
+    margin-bottom: 0;
+  }
+
+.image_doc {
+    margin: 0 0 50px -100px;
+}
+
+.box_image_doc,
+.box_image_doc_1{
+    margin-bottom: 20px;
+}
+
+.header_steps_container h6 {
+    width: 240px;
+}
+
+.content_steps_box p {
+    width: 260px;
+}
+
+.number_box h1,
+.number_box_1 h1,
+.number_box_2 h1,
+.number_box_3 h1 {
+    margin-left: 0;
+    font-size: 32px;
+}
+.main_about_container img {
+    margin-left: 0;
+}
+
+.section_reviews_container h1 {
+    margin-top: 0;
+}
+
+.section_reviews_container p {
+    width: 235px;
+}
+
+.box_image_reviews p {
+    margin-left: 0;
+}
+
+.nav_general_box {
+    margin-left: -15px;
+}
+
+.wrap_contacts_container h1 {
+    margin-left: 35px;
+}
+
+.content_contacts_page p {
+    width: 270px;
+}
+
+.button a {
+    font-size: 16px;
+}
+
+.img_doc_class img {
+    width:100%;
+    margin-left: 0;
+}
+
+.list_content {
+    padding-left: 50px;
+}
+
+.container h1 {
+    margin-left: 30px;
+}
+
+.container h3 {
+    width: 290px;
+}
+
+.img_doc_class img {
+    display: none;
+}
+
+.nav_general_box a,
+.nav_general_box span,
+.nav_div{
+    font-size: 20px;
+}
+
+}
+
+@media(max-width:320px) {
+
+.nav_container ul{
+    margin-top: 104px;
+    margin-left: -201px;
+}
+
+.promo h1 {
+    margin-left: 30px;
+    line-height: 20px;
+}
+
+.promo p {
+    width:180px;
+}
+
+.button {
+   margin-left: -10px;
+}
+
+.promo_image_1 {
+   width:200px;
+   height: 200px;
+}
+
+.section_consultation {
+    margin-left: 20px;
+}
+
+.consultation_box h1 {
+    margin-left: 0 !important;
+    font-size: 16px;
+    padding-top: 0;
+}
+
+.form_box input {
+    margin-left: 0;
+}
+
+.button_free {
+    margin-left: 0;
+}
+
+.about h3 {
+    margin-left: -30px;
+}
+
+.about h6 {
+    width: 210px;
+}
+
+.about_box_content h5 {
+    margin-left: -30px;
+}
+
+.about_box_content p {
+    width: 230px;
+    margin-left: -30px;
+}
+
+.dental_services_container h1 {
+   margin-left: 30px;
+  }
+
+.dental_services_container p {
+    width: 210px;
+    margin-left: 25px;
+}
+
+.box_image_doc,
+.box_image_doc_1,
+.box_image_doc_2{
+    margin-left: 120px;
+}
+
+.img-container {
+    flex-direction: column;
+    margin-left: -20px;
+}
+
+.box_1 p, 
+.box_2 p, 
+.box_3 p {
+    margin-bottom: 0;
+}
+
+.section_team_professionals h1 {
+    margin-left:30px;
+  }
+
+.section_team_professionals p {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.image_doc {
+    margin: 0 0 50px -100px;
+}
+
+.header_steps_container h6 {
+    width: 200px;
+}
+
+.content_steps_box p {
+    width: 220px;
+    margin-left: 15px;
+}
+
+.number_section {
+    box-shadow:2px 2px 2px 1px #49B3FB;
+    width: 200px;
+}
+
+.number_box h1,
+.number_box_1 h1,
+.number_box_2 h1,
+.number_box_3 h1 {
+    margin-left: -20px;
+    padding-top: 0;
+}
+
+.number_box span,
+.number_box_1 span,
+.number_box_2 span,
+.number_box_3 span {
+    margin-left:0;
+}
+
+.main_about_container img {
+    width: 100%;
+    box-shadow:2px 2px 2px 1px #49B3FB;
+}
+
+.gallary_list img {
+    width: 80%;
+}
+
+.button_about a {
+    font-size: 16px;
+}
+
+.nav_general_box span,
+.nav_general_box a,
+.nav_div {
+    font-size: 18px;
+}
+
+.section_reviews_container h1 {
+    margin-left: 30px;
+}
+
+.box_image_reviews {
+    width: 200px;
+    height: 200px;
+}
+
+.box_image_reviews p {
+    margin-left:-20px;
+}
+
+.h1 p {
+    width: 230px;
+}
+
+.wrap_contacts_container h1 {
+    font-size: 26px;
+}
+
+.content_contacts_page p {
+    width: 230px;
+}
+
+.container h1 {
+    margin-left: 30px;
+}
+
+.list_content {
+    padding-left: 25px;
+}
+
+.container h1 {
+    font-size: 22px;
+}
+
+.container h3 {
+    width: 255px;
+}
+
+.app_container input,
+.app_container select,
+.app_container textarea {
+    width: 200px;
+}
+
+.nav_general_box a,
+.nav_general_box span,
+.nav_div{
+    font-size: 16px;
+}
+
+
+}

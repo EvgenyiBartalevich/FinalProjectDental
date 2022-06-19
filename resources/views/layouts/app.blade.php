@@ -19,9 +19,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+        <div class="containet_log">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+            <!--<div class="container">-->
             <div class="nav_dental_profile">
                 <a href="{{ url('/') }}">Dental</a>
                     </div>
@@ -35,7 +35,6 @@
                     <ul class="navbar-nav me-auto">
 
                     </ul>
-
                     
                     <ul class="navbar-nav ms-auto">
                         
@@ -74,10 +73,10 @@
                 </div>
             </div>
         </nav>
+    </div>
 
         <main class="py-4">
             @yield('content')
         </main>
-    </div>
 </body>
 </html>

@@ -5,24 +5,27 @@
             <a href="{{ route('/') }}">Dental</a>
         </div>
             <nav class="nav_container">
+                <button class="nav_toggle"><label for="nav_toggle"></label></button>
+
+                <input type="checkbox" id="nav_toggle">
 		        <ul>
-			        <li><a href="{{ route('/') }}">home</a></li>
-			        <li><a href="{{ route('about') }}">about</a></li>
-			        <li><a href="{{ route('appoinment') }}">appoinment</a></li>
-                    <li><a href="{{ route('reviews') }}">reviews</a></li>
-			        <li><a href="{{ route('contacts') }}">contacts</a></li>
-                    <li><a href="{{ route('ticket') }}">all tickets</a></li>
+			        <li><a href="{{ route('/') }}">главная</a></li>
+			        <li><a href="{{ route('add_about') }}">о нас</a></li>
+                    <li><a href="{{ route('reviews') }}">отзывы</a></li>
+			        <li><a href="{{ route('contacts') }}">контакты</a></li>
+                    <li><a href="{{ route('appoinment') }}">заказать талон</a></li>
+                    <li><a href="{{ route('ticket') }}">талоны</a></li>
                     @guest
                     <li>
-                        <a href="{{ route('login') }}">login</a>
+                        <a href="{{ route('login') }}">Вход</a>
                     </li>
-                    
+
                     @else
                     <li>
                     <a class="menu-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Выход') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

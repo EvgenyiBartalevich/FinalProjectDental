@@ -7,6 +7,10 @@
     <title>@yield('title_content')</title>
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href=/image" rel="stylesheet">
+    <link href="{{ URL::asset('css/media.css') }}" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,900&display=swap" rel="stylesheet">
     <script src="{{ URL::asset('js/app.js') }}"></script>
 </head>
 <body>
@@ -17,6 +21,8 @@
 <div class="container">
     @include('inc.footer')
 </div>
+
+</script>
 </body>
 </html>
 

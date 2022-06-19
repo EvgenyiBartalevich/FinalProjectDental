@@ -1,75 +1,48 @@
 @extends('layouts.layout')
 
 @section('title_content')
-Review
+Отзывы
 @endsection
 
 @section('content_1')
 
 <div class="nav_general_box">
-    <a href="{{ route('/') }}">home</a>
+    <a href="{{ route('/') }}">Главная</a>
     <div class="nav_div">></div>
-    <span>Reviews</span>
+    <span>Отзывы</span>
 </div>
 
 <section class="section_reviews_container">
 	<div class="reviews_container">
-		<h1>Reviews From Our Patient.</h1>
-			<p>We believe that focus and our associated programs are most instrumental in reducing readmissions and managing.</p>
+		<h1>Отзывы наших пациентов</h1>
+		<p>Будем признательны за Ваш отзыв о Нашей клинике!</p>
+	<div class="messages_error_home">
+		@include('inc.message')
+	</div>
             <div class="form_wrapper">
-				<form method="POST" class="add_review">
-				<p><input type="text" name="name"  class="review_input" placeholder="Name.."></p>
-            	<p><textarea name="comment" cols="50" rows="2.5" placeholder="Add to review.." ></textarea></p>
-            	<p><input type="submit" class="button_submit" value="Publication"></p>
-            	<p><input type="reset" class="button_reset" value="Сlear"></p>
+				<form method="POST" class="add_review" action="{{ route('review_data') }}">
+
+				@csrf
+
+				<p><input type="text" name="name" id="name" class="review_input" placeholder="имя"></p>
+				<p><input type="text" name="email" id="email"  class="review_input" placeholder="email"></p>
+            	<p><textarea name="message" id="message" cols="40" rows="2.5" placeholder="отзыв" ></textarea></p>
+            	<p><input type="submit" class="button_submit" value="Опубликовать"></p>
             	</form>
+			</div>             	                                  
+        <div class="image_reviews">
+        	@foreach($reviews as $el)
+            <div class="box_image_reviews">
+				<img src="{{asset('image/user_guost.png')}}" alt="image">
+             		<div class="icon_box_review_3">
+						<h2>{{ $el->name }}</h2>
+						<p>{{ $el->email }}</p>
+						<p>{{ $el->message }}</p>
+                    </div>
 			</div>
-				<div class="image_reviews">
-					<div class="box_image_reviews">
-						<img src="{{asset('image/reviews_logo3.png')}}" alt="image">
-                            <div class="icon_box_review">
-                                    <h2>Andrew Wolf</h2>
-							        <p>Lorem ipsum dolor sit amet, consec adipis. Cursus ultricies sit sit ultricies sit sit dolo</p>
-                                        </div>
-								            </div>
-								                <div class="box_image_reviews">
-									                <img src="{{asset('image/reviews_logo2.png')}}" alt="image">
-                                                        <div class="icon_box_review_2">
-									                        <h2>Anna Fox</h2>
-									                        <p>Lorem ipsum dolor sit amet, consec adipis. Cursus ultricies sit sit ultricies sit sit dolo</p>
-                                                                </div>
-								                                    </div>
-								                                        <div class="box_image_reviews">
-									                                        <img src="{{asset('image/reviews_logo1.png')}}" alt="image">
-                                                                                <div class="icon_box_review_3">
-									                                                <h2>Bella Smith</h2>
-									                                                <p>Lorem ipsum dolor sit amet, consec adipis. Cursus ultricies sit sit ultricies sit sit dolo</p>
-                                                                                        </div>
-								                                                            </div>
-                                                        	                                    </div>
-                                                                                            <div class="image_reviews">
-                                                                                        <div class="box_image_reviews">
-									                                                <img src="{{asset('image/review_logo_4.jpg')}}" alt="image">
-                                                                                <div class="icon_box_review_3">
-									                                        <h2>Nick</h2>
-									                                        <p>Text...</p>
-                                                                        </div>
-								                                    </div>
-                                                                <div class="box_image_reviews">
-									                        <img src="{{asset('image/review_logo_4.jpg')}}" alt="image">
-                                                        <div class="icon_box_review_3">
-									                <h2>Nick</h2>
-									                <p>Text...</p>
-                                                </div>
-								            </div>
-                                        <div class="box_image_reviews">
-									<img src="{{asset('image/review_logo_4.jpg')}}" alt="image">
-                                <div class="icon_box_review_3">
-							<h2>Nick</h2>
-							<p>Text...</p>
-                        </div>
-					</div>
-                </div>
-			</div>
-	</section>
+	@endforeach
+		</div>
+	</div>
+</section>
 @endsection
+

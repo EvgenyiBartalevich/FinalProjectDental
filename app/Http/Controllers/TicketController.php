@@ -23,11 +23,11 @@ class TicketController extends Controller
             $ticket->gender    = $request->input('gender');
             $ticket->date      = $request->input('date');
             $ticket->time      = $request->input('time');
-            $ticket->comment   = $request->input('comment');
+            $ticket->comment   = $request->is('comment');
 
         $ticket->save();
 
-        return redirect()->route('/')->with('success', 'Your online entry has been accepted!');
+        return redirect()->route('/')->with('success', 'Ваша онлайн запись принята!');
     }
 
     public function appData()
@@ -50,7 +50,7 @@ class TicketController extends Controller
 
     public function addUpdateMessages ($id, TicketRequest $request)
     {
-        //dd($request->all())
+        //c
             $ticket = new Appoinment();
             $ticket->find($id);
             $ticket->name      = $request->input('name');
@@ -65,13 +65,14 @@ class TicketController extends Controller
 
         $ticket->save();
 
-        return redirect()->route('appoinment_data', $id)->with('success', 'Your online application has been updated!');
+        return redirect()->route('appoinment_data', $id)->with('success', 'Ваша онлайн запись обновлена!');
     }
+    
     public function deleteMessages($id)
     {
         Appoinment::find($id)->delete();
 
-        return redirect()->route('appoinment_data', $id)->with('success', 'Your online application has been delete!');
+        return redirect()->route('appoinment_data', $id)->with('success', 'Вашa онлайнзапись была удалена!');
     }
 
 

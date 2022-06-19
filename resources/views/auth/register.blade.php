@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="line_bord_home"></div>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -74,11 +72,4 @@
             </div>
         </div>
     </div>
-<div class="line_bord_home_footer"></div>
-    <footer class="footer_container">
-        <div class="content_footer_container">
-            <p>Copyright &copy; 2020 All rights Reserved - Dental. Bartalevich E.A. 2022</p>
-        </div>
-    </footer>
-</div>
 @endsection

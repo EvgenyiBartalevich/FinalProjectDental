@@ -1,15 +1,15 @@
 @extends('layouts.layout')
 
 @section('title_content')
-Appoinment
+Заказ талона
 @endsection
 
 @section('content_1')
 
 <div class="nav_general_box">
-    <a href="{{ route('/') }}">home</a>
+    <a href="{{ route('/') }}">Главная</a>
     <div class="nav_div">></div>
-    <span>Appoinment</span>
+    <span>Заказ талона</span>
 </div>
 
 <div class="app_container">
@@ -17,88 +17,105 @@ Appoinment
     
     @include('inc.message')
 
-        <h2>make an appoinment</h2>
-        <p>Dental or oral health is concerned with your teeth, gums and mouth. healthy mouth free of infections, injuries and other problems with.</p>
-        <h5>Sign up online</h5>
+        <h2>запись на прием</h2>
+        <p>Здоровье зубов или полости рта связано с вашими зубами, деснами и ртом. здоровый рот без инфекций, травм и других проблем.</p>
+        <h5>Заказ талона</h5>
             </div>
                 <div class="wrap_app_container">
                     <form method="POST" action="{{ route('appoinment_form') }}">
 
                         @csrf
-                    
-                        <p><strong>Your name *:</strong></p>
-                        <input type="text" id="name" name="name" placeholder="Yuor name *">
+
+                        <h2>Личные данные</h2>
+                        <div class="img_doc_class">
+                            <img src="{{asset('image/user_icon.png')}}" width="300px" alt="doc">
+                        </div>
+                            <p><strong>Ваше имя *:</strong></p>
+                            <input type="text" id="name" name="name" placeholder="Ваше имя *">
 
                         
-                        <p><strong>Your phone number *:</strong></p>
-                        <input type="text" id="phone" name="phone" placeholder="Phone *">
+                        <p><strong>Ваш номер телефона *:</strong></p>
+                        <input type="text" id="phone" name="phone" placeholder="тел. *">
 
-                        <p><strong>Your email :</strong></p>
+                        <p><strong>Ваш email :</strong></p>
                             <input type="text" id="email" name="email" placeholder="Email *">
 
-                        <p><strong>Сhoose a department *:</strong></p>
+                            <p><strong>Выбор отделения: *:</strong></p>
+                            <div class="img_doc_class">
+                                <img src="{{asset('image/dep_icon.png')}}" width="300px" alt="doc">
+                            </div>
+                        <p><strong> 
+                            <a href="{{ route('newticket') }}">
+                            <button type="button" class="green_button_app">Выбор отделения</button>
+                            </a>
+                        </strong></p>
                         <p><select name="deparment" id="deparment">
                             <option value=""></option>
-                            <option value="Therapeutic">Therapeutic</option>
-                            <option value="Orthopedic">Orthopedic</option>
-                            <option value="Surgical">Surgical</option>
-                            <option value="Сhildrens">Сhildren's</option>
+                            <option value="Терапевтическое">Терапевтическое</option>
+                            <option value="Ортопедическое">Ортопедическое</option>
+                            <option value="Хирургическое">Хирургическое</option>
+                            <option value="Детское">Детское</option>
                             </select></p>
 
-                            <p><strong>Сhoose a doctor *:</strong></p>
+                            <p><strong>Выбор лечищего врача: *:</strong></p>
+                            <div class="img_doc_class">
+                                <img src="{{asset('image/show_doc_1.png')}}" width="300px" alt="doc">
+                            </div>
+                        <p><strong>
+                            <a href="{{ route('newticketdoc') }}">
+                                <button type="button" class="green_button_app">Выбрать специалиста</button>
+                            </a>
+                        </strong></p>
+                        
                             <p><select name="doc" id="doc">
-                            <optgroup label="Therapeutic">
+                            <optgroup label="Терапевтическое">
                             <option value=""></option>
-                            <option value="Frank J. Aard">Frank J. Aard</option>
-                            <option value="Aash Aaron">Aash Aaron</option>
-                            <option value="Quinton Aaron">Quinton Aaron</option>
+                            <option value="Жанна Петровна Березкина">Жанна Петровна Березкина</option>
+                            <option value="Владимир Иванович Гроза">Владимир Иванович Гроза</option>
+                            <option value="Раиса Александровна Туманова">Раиса Александровна Туманова</option>
                             </optgroup>
 
-                            <optgroup label="Orthopedic">
+                            <optgroup label="Ортопедическое">
                             <option value=""></option>
-                            <option value="Barkhad Abdi">Barkhad Abdi</option>
-                            <option value="Kareem Abdul-Jabbar">Kareem Abdul-Jabbar</option>
-                            <option value="Tim Abell">Tim Abell</option>
+                            <option value="Тимур Иванович Хайдаров">Тимур Иванович Хайдаров</option>
+                            <option value="Анна Михайловна Курочкина">Анна Михайловна Курочкина</option>
+                            <option value="Степан Антонович Швед">Степан Антонович Швед</option>
                             </optgroup>
 
-                            <optgroup label="Surgical">
+                            <optgroup label="Хирургическое">
                             <option value=""></option>
-                            <option value="Walter Abel">Walter Abel</option>
-                            <option value="Austin Abrams">Austin Abrams</option>
-                            <option value="Jim Abrahams">Jim Abrahams</option>
+                            <option value="Тимур Иванович Хайдаров">Григорий Федорович Стекловар</option>
+                            <option value="Анна Михайловна Курочкина">Евгений Борисович Минский</option>
+                            <option value="Юрий Николаевич Мышкин">Юрий Николаевич Мышкин</option>
                             </optgroup>
 
-                            <optgroup label="Сhildren's">
+                            <optgroup label="Детское">
                             <option value=""></option>
-                            <option value="Ray Abruzzo">Ray Abruzzo</option>
-                            <option value="Frankie Avalon">Frankie Avalon</option>
-                            <option value="Erick Avari">Erick Avari</option>
+                            <option value="Владимир Иванович Гроза">Владимир Иванович Гроза</option>
+                            <option value="Григорий Федорович Стекловар">Григорий Федорович Стекловар</option>
+                            <option value="Евгений Борисович Минский">Евгений Борисович Минский</option>
                             </optgroup>
 
                         </select></p>
 
-                            <p><strong>Your gender *</strong></p>
-                            <p><select name="gender" id="gender">
+                            <p><strong>Укажите пол: *</strong></p>
+                            <p><select name="gender" id="пол">
                             <option value=""></option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
+                            <option value="Mужской">Mужской</option>
+                            <option value="Женский">Женский</option>
                             </select></p>
 
-                            <p><strong>Select a date *:</strong></p>
-                            <input type="date" name="date" id="date" placeholder="Date *">
+                            <p><strong>Выбрать дату/время: *:</strong></p>
+                            <div class="img_doc_class">
+                                <img src="{{asset('image/time_icon.png')}}" width="300px" alt="doc">
+                            </div>
+                            <input type="date" name="date" id="date" placeholder="Дата *">
+                            <p><input type="time" name="time" id="time" placeholder="Время *"></p>
 
-                            <p><strong>Select a time *:</strong></p>
-                            <p><select name="time" id="time">
-                            <option value=""></option>
-                            <option value="even days: 8.00 - 13.30">Even days: 8.00 - 13.30</option>
-                            <option value="odd days: 14.00 - 19.30">Odd days: 14.00 - 19.30</option>
-                            </select></p>
+                            <p><strong>Примечания: </strong></p>
+                            <p><textarea name="comment" id="comment" placeholder="Примечание.."></textarea></p>
 
-                            <p><strong>Notes :</strong></p>
-                            <p><textarea name="comment" id="comment" placeholder="Add to comment.."></textarea></p>
-
-                            <button class="button_submit" type="submit" ><span>Order online</span></button>
-                            <button class="button_reset"type="reset"><span>Clear</span></button>
+                            <button class="button_submit" type="submit" ><span>Заказать талон</span></button>
                         </form>
                     </div>
                 </div>

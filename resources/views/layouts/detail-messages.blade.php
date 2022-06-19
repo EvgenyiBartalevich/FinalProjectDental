@@ -7,13 +7,12 @@ Detail
 @section('content_1')
 
 <div class="container">
-    <h1>Online doctor appointment</h1>
-    <h5>Hello, {{ $data->name }} ! </h5>
+    <h1>Запись на прием</h1>
         <div class="alert alert-info">
-            <strong>You have booked a doctor's appointment {{ $data->doc }}, department {{ $data->deparment }}. Date of your visit to us {{ $data->date }}. See you soon!</strong><p>{{ $data->created_at }}</p>
+            <strong>Здравствуйте {{ $data->name }}! Вы записаны на прием, Ваш лечещий врач: {{ $data->doc }}; кабинет: 215;  отделение: {{ $data->deparment }}. Ждем Вас {{ $data->date }} в {{ $data->time }}.</br> С уважением Ваш Dental.
             </div>
                 <div class="pull-right">
-            <a class="gray_button_app" href="{{ route('appoinment_data') }}"> Back</a>
+            <a class="gray_button_app" href="{{ route('appoinment_data') }}"> Назад</a>
         </div>
 </div>
 @endsection
